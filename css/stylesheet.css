@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #173E59;
+}
+
+.content {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content .twitter-wrapper {
+  --hover: #19A2F6;
+}
+.content .twitter-wrapper button:hover {
+  animation: pulse 1s;
+  cursor: pointer;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+.content .twitter-wrapper button:hover .twitter-icon {
+  transform: rotate(-20deg);
+  transition: transform 0.5s ease-in-out;
+}
+.content .steam-wrapper {
+  --hover: #171A21;
+}
+.content .steam-wrapper button:hover {
+  animation: pulse 1s;
+  cursor: pointer;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+.content .steam-wrapper button:hover .steam-icon {
+  animation: shake 0.5s;
+}
+.content .reddit-wrapper {
+  --hover: #FF4500;
+}
+.content .reddit-wrapper button:hover {
+  animation: pulse 1s;
+  cursor: pointer;
+}
+.content .reddit-wrapper button:hover .reddit-icon {
+  animation: rotate 1.2s ease-in-out;
+}
+.content button {
+  position: relative;
+  font-size: 1.5rem;
+  padding: 5px 20px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--hover);
+  color: var(--hover);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+  100% {
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(0.5px, 0.5px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-0.5px, -0.5px) rotate(-0.5deg);
+  }
+  20% {
+    transform: translate(-1px, 0px) rotate(0.5deg);
+  }
+  30% {
+    transform: translate(0.5px, 0.75px) rotate(0deg);
+  }
+  40% {
+    transform: translate(0.5px, -0.5px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(-0.5px, 1px) rotate(-0.5deg);
+  }
+  60% {
+    transform: translate(-1px, 0.5px) rotate(0deg);
+  }
+  70% {
+    transform: translate(1px, 1px) rotate(-0.5deg);
+  }
+  80% {
+    transform: translate(-0.5px, -0.5px) rotate(0.5deg);
+  }
+  90% {
+    transform: translate(0.5px, 1px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0.5px, -0.5px) rotate(-0.5deg);
+  }
+}
+@keyframes rotate {
+  10% {
+    transform: rotate(-40deg);
+  }
+  80% {
+    transform: rotate(1150deg);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
