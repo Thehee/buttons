@@ -18,11 +18,6 @@ body {
 .content .twitter-wrapper {
   --hover: #19A2F6;
 }
-.content .twitter-wrapper button:hover {
-  animation: pulse 1s;
-  cursor: pointer;
-  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
-}
 .content .twitter-wrapper button:hover .twitter-icon {
   transform: rotate(-20deg);
   transition: transform 0.5s ease-in-out;
@@ -30,20 +25,11 @@ body {
 .content .steam-wrapper {
   --hover: #171A21;
 }
-.content .steam-wrapper button:hover {
-  animation: pulse 1s;
-  cursor: pointer;
-  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
-}
 .content .steam-wrapper button:hover .steam-icon {
   animation: shake 0.5s;
 }
 .content .reddit-wrapper {
   --hover: #FF4500;
-}
-.content .reddit-wrapper button:hover {
-  animation: pulse 1s;
-  cursor: pointer;
 }
 .content .reddit-wrapper button:hover .reddit-icon {
   animation: rotate 1.2s ease-in-out;
@@ -56,6 +42,10 @@ body {
   outline: none;
   border: 2px solid var(--hover);
   color: var(--hover);
+}
+.content button:hover {
+  animation: pulse 1s;
+  cursor: pointer;
 }
 
 @keyframes pulse {
